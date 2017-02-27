@@ -12,8 +12,8 @@ keywords = ["iron", "web", "http", "file"]
 cache = ["filetime"]
 
 [dependencies]
-iron = "0.5"
-mount = "0.3"
+iron = { git = "https://github.com/MJDSys/iron", branch = "async" }
+mount = { git = "https://github.com/MJDSys/mount", branch = "async" }
 time = "0.1"
 url = "1.1"
 
@@ -22,6 +22,6 @@ version = "0.1"
 optional = true
 
 [dev-dependencies]
-hyper = "0.10"
+hyper = { git = "https://github.com/hyperium/hyper" }
 router = "0.5"
-iron-test = "0.5"
+iron-test = { git = "https://github.com/MJDSys/iron-test", branch = "async" }
